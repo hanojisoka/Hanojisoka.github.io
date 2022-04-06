@@ -3331,7 +3331,12 @@ input, select, textarea {
 		height: 1500px; /* Used in this example to enable scrolling */
 	  }
 	  iframe {
-		height: 360px;
+		max-height: 360px;
+		max-width: 640px;
+		min-height: 360px;
+		min-width: 0px;
+		
+		height: 100%;
 		width: 100%;
 		resize: both;
 		overflow: auto;
